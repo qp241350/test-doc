@@ -1,0 +1,28 @@
+site_name: Test Doc
+site_description: TechDocs site for the test-doc component
+
+nav:
+  - Home: index.md
+  - Guides:
+      - Publish & Access: guides/publish-access.md
+      - PR Workflow: guides/pr-workflow.md
+  - Assets: assets/README.md
+  - Reference:
+      - API: reference/api.md
+
+plugins:
+  - techdocs-core:
+      use_material_search: true
+
+markdown_extensions:
+  - attr_list
+
+docs_dir: docs
+
+# Central repository for all TechDocs (edit links)
+repo_url: https://github.qmul.ac.uk/newworld/backstage-docs
+# Path to this component's docs directory from repo root
+edit_uri: edit/main/test-doc/docs/
+
+extra_css:
+  - stylesheets/extra.css
